@@ -53,9 +53,9 @@ const OTPauth = () => {
         value={phoneNumber}
         onChange={(e) => setPhoneNumber(e.target.value)}  // Phone number ko update karte hain
       />
-      <button onClick={sendOtp}>Send OTP</button>  // "Send OTP" pe click karne par OTP bheja jata hai
-      {errorMessage && <p>{errorMessage}</p>}  // Agar error hai toh dikhate hain
-      <div id="recaptcha-container"></div>  // reCAPTCHA ka container hai
+      <button onClick={sendOtp}>Send OTP</button>  
+      {errorMessage && <p>{errorMessage}</p>}  
+      <div id="recaptcha-container"></div>    
 
       {otpSent && (  // Agar OTP bheja gaya hai, tab OTP input field show hoga
         <div>
